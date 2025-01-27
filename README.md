@@ -15,8 +15,8 @@ The Flight Reservation System is a web-based application designed to facilitate 
 
 - **Frontend**: HTML, CSS
 - **Backend**: Python
-- **Database**: [Specify the database used, e.g., MySQL, PostgreSQL]
-- **Frameworks/Libraries**: [Specify any frameworks or libraries used, e.g., Flask, Django]
+- **Database**: [--]
+- **Frameworks/Libraries**: [flask]
 
 ## Installation
 
