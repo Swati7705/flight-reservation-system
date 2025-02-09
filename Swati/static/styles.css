@@ -1,16 +1,87 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: url('https://shutterstock.sa7eer.com/r/d/sstk?id1=search-top&id2=0403141c-baf5-47d6-8703-a19121c12ee0&id3=c069b713-2b08-4be8-8625-ffa2976b4bd7&u=https%3A%2F%2Fshutterstock.7eer.net%2Fc%2F38919%2F1636534%2F1305%3Fsharedid%3Dwww.vecteezy.com%26subId1%3Dsearch-top%26subId2%3D0403141c-baf5-47d6-8703-a19121c12ee0%26subId3%3Dc069b713-2b08-4be8-8625-ffa2976b4bd7%26u%3Dhttps%253A%252F%252Fwww.shutterstock.com%252Fimage-photo%252Fticket-flight-air-plane-travel-business-515243494') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Navbar */
-.navbar {
-    background: #333;
-    padding: 15px;
+h1 {
+    color: #222;
+    margin-bottom: 20px;
     text-align: center;
+}
+
+/* Success */
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -18,91 +89,95 @@ body {
 
 .navbar-list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-list li {
-    display: inline;
     margin: 0 15px;
 }
 
-.navbar-list a {
+.navbar-list li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar-list a:hover {
-    color: #ffcc00;
+.navbar-list li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
 }
 
-/* Main Content */
+/* Main Content Styles */
 .content {
-    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
     padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Table */
 .flight-table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
-    background: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    font-size: 16px;
 }
 
-.flight-table th, .flight-table td {
-    padding: 15px;
+.flight-table th,
+.flight-table td {
     border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
 }
 
 .flight-table th {
-    background: #007BFF;
-    color: white;
+    background-color: #f4f4f4;
+    font-weight: bold;
 }
 
 .flight-table tr:nth-child(even) {
-    background: #f2f2f2;
+    background-color: #f9f9f9;
 }
 
-/* Buttons */
+.flight-table tr:hover {
+    background-color: #f1f1f1;
+}
+
 .btn {
-    background: #28a745;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background: #218838;
-    transform: scale(1.1);
+    background-color: #0056b3;
 }
 
-/* Footer */
+/* Footer Styles */
 .footer {
-    background: #333;
+    background-color: rgba(51, 51, 51, 0.9);
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .flight-table {
-        width: 100%;
-    }
-
-    .navbar-list li {
-        display: block;
-        margin: 10px 0;
-    }
+.footer p {
+    margin: 0;
 }
